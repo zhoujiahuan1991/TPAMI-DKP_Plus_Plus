@@ -21,7 +21,7 @@ The *official* repository for  [Distribution-aware Knowledge Aligning and Protot
 * 🔥[2024.04.07] The code for DKP (accepted by CVPR 2024) is released in [DKP Code](https://github.com/zhoujiahuan1991/CVPR2024-DKP)!
 * 🔥[2024.06.19] The full paper for DKP is publicly available in [DKP Paper](https://openaccess.thecvf.com/content/CVPR2024/html/Xu_Distribution-aware_Knowledge_Prototyping_for_Non-exemplar_Lifelong_Person_Re-identification_CVPR_2024_paper.html)!
 * 🔥[2025.07.26] Our improved verison DKP++ is accepted by IEEE TPAMI. The full paper is available in [DKP++ Paper](https://ieeexplore.ieee.org/abstract/document/11120364/)!
-* 🔥[2025.08.14] The code for DKP++ is released in [DKP++ Code](https://github.com/zhoujiahuan1991/DKP-Plus-Plus).
+* 🔥[2025.08.14] The code for DKP++ is released in [DKP++ Code](https://github.com/zhoujiahuan1991/TPAMI-DKP_Plus_Plus).
 
 ![Framework](figs/framework.png)
 
