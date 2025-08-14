@@ -1,0 +1,1319 @@
+==========
+Args:Namespace(batch_size=128, workers=8, height=256, width=128, num_instances=4, seed=0, print_freq=200, data_dir='/home/xukunlun/DATA/PRID', logs_dir='transfer_model', color_style='rgb', n_kernel=1, groups=1)
+==========
++-------------------------+--------+------------+---------+
+|           set           | images | identities | cameras |
++-------------------------+--------+------------+---------+
+| IncrementalSamples4duke |        |            |         |
+|          train          | 16522  |    702     |    8    |
+|          query          |  2228  |    702     |    8    |
+|         gallery         | 17661  |    1110    |    8    |
++-------------------------+--------+------------+---------+
++---------------------------+--------+------------+---------+
+|            set            | images | identities | cameras |
++---------------------------+--------+------------+---------+
+| IncrementalSamples4market |        |            |         |
+|           train           | 12936  |    751     |    6    |
+|           query           |  3368  |    750     |    6    |
+|          gallery          | 15913  |    751     |    6    |
++---------------------------+--------+------------+---------+
++--------------------------------+--------+------------+---------+
+|              set               | images | identities | cameras |
++--------------------------------+--------+------------+---------+
+| IncrementalSamples4subcuhksysu |        |            |         |
+|             train              |  4374  |    942     |    1    |
+|             query              |  2900  |    2900    |    1    |
+|            gallery             |  5447  |    2900    |    1    |
++--------------------------------+--------+------------+---------+
++---------------------------+--------+------------+---------+
+|            set            | images | identities | cameras |
++---------------------------+--------+------------+---------+
+| IncrementalSamples4msmt17 |        |            |         |
+|           train           | 30248  |    1041    |    15   |
+|           query           | 11659  |    3060    |    15   |
+|          gallery          | 82161  |    3060    |    15   |
++---------------------------+--------+------------+---------+
++---------------------------+--------+------------+---------+
+|            set            | images | identities | cameras |
++---------------------------+--------+------------+---------+
+| IncrementalSamples4cuhk03 |        |            |         |
+|           train           |  7368  |    767     |    2    |
+|           query           |  1400  |    700     |    2    |
+|          gallery          |  5328  |    700     |    2    |
++---------------------------+--------+------------+---------+
+data prepared!!
+creating model!!
+using mobilenet-v3!!!!
+Param count for AKPNet's initialized parameters: 1105348
+generating trainer!!
+start training on  dukemtmc
+Epoch: [0][100/400]	Loss_cond 0.465 (0.865)
+saved images in  transfer_model/vis/dukemtmc/0/
+Epoch: [0][200/400]	Loss_cond 0.315 (0.637)
+Epoch: [0][300/400]	Loss_cond 0.272 (0.532)
+Epoch: [0][400/400]	Loss_cond 0.265 (0.468)
+Epoch: [1][100/400]	Loss_cond 0.269 (0.251)
+saved images in  transfer_model/vis/dukemtmc/1/
+Epoch: [1][200/400]	Loss_cond 0.221 (0.242)
+Epoch: [1][300/400]	Loss_cond 0.223 (0.237)
+Epoch: [1][400/400]	Loss_cond 0.258 (0.232)
+Epoch: [2][100/400]	Loss_cond 0.210 (0.206)
+saved images in  transfer_model/vis/dukemtmc/2/
+Epoch: [2][200/400]	Loss_cond 0.175 (0.205)
+Epoch: [2][300/400]	Loss_cond 0.203 (0.203)
+Epoch: [2][400/400]	Loss_cond 0.160 (0.199)
+Epoch: [3][100/400]	Loss_cond 0.197 (0.184)
+saved images in  transfer_model/vis/dukemtmc/3/
+Epoch: [3][200/400]	Loss_cond 0.170 (0.183)
+Epoch: [3][300/400]	Loss_cond 0.155 (0.182)
+Epoch: [3][400/400]	Loss_cond 0.153 (0.179)
+Epoch: [4][100/400]	Loss_cond 0.173 (0.168)
+saved images in  transfer_model/vis/dukemtmc/4/
+Epoch: [4][200/400]	Loss_cond 0.152 (0.171)
+Epoch: [4][300/400]	Loss_cond 0.140 (0.168)
+Epoch: [4][400/400]	Loss_cond 0.141 (0.167)
+Epoch: [5][100/400]	Loss_cond 0.162 (0.158)
+saved images in  transfer_model/vis/dukemtmc/5/
+Epoch: [5][200/400]	Loss_cond 0.223 (0.156)
+Epoch: [5][300/400]	Loss_cond 0.140 (0.156)
+Epoch: [5][400/400]	Loss_cond 0.177 (0.156)
+Epoch: [6][100/400]	Loss_cond 0.136 (0.149)
+saved images in  transfer_model/vis/dukemtmc/6/
+Epoch: [6][200/400]	Loss_cond 0.152 (0.149)
+Epoch: [6][300/400]	Loss_cond 0.189 (0.149)
+Epoch: [6][400/400]	Loss_cond 0.145 (0.148)
+Epoch: [7][100/400]	Loss_cond 0.115 (0.141)
+saved images in  transfer_model/vis/dukemtmc/7/
+Epoch: [7][200/400]	Loss_cond 0.124 (0.141)
+Epoch: [7][300/400]	Loss_cond 0.138 (0.142)
+Epoch: [7][400/400]	Loss_cond 0.164 (0.141)
+Epoch: [8][100/400]	Loss_cond 0.151 (0.140)
+saved images in  transfer_model/vis/dukemtmc/8/
+Epoch: [8][200/400]	Loss_cond 0.132 (0.140)
+Epoch: [8][300/400]	Loss_cond 0.116 (0.138)
+Epoch: [8][400/400]	Loss_cond 0.102 (0.137)
+Epoch: [9][100/400]	Loss_cond 0.153 (0.136)
+saved images in  transfer_model/vis/dukemtmc/9/
+Epoch: [9][200/400]	Loss_cond 0.135 (0.135)
+Epoch: [9][300/400]	Loss_cond 0.133 (0.134)
+Epoch: [9][400/400]	Loss_cond 0.171 (0.133)
+Epoch: [10][100/400]	Loss_cond 0.119 (0.130)
+saved images in  transfer_model/vis/dukemtmc/10/
+Epoch: [10][200/400]	Loss_cond 0.121 (0.130)
+Epoch: [10][300/400]	Loss_cond 0.115 (0.130)
+Epoch: [10][400/400]	Loss_cond 0.119 (0.129)
+Epoch: [11][100/400]	Loss_cond 0.117 (0.129)
+saved images in  transfer_model/vis/dukemtmc/11/
+Epoch: [11][200/400]	Loss_cond 0.118 (0.127)
+Epoch: [11][300/400]	Loss_cond 0.121 (0.126)
+Epoch: [11][400/400]	Loss_cond 0.141 (0.125)
+Epoch: [12][100/400]	Loss_cond 0.125 (0.124)
+saved images in  transfer_model/vis/dukemtmc/12/
+Epoch: [12][200/400]	Loss_cond 0.110 (0.121)
+Epoch: [12][300/400]	Loss_cond 0.158 (0.122)
+Epoch: [12][400/400]	Loss_cond 0.116 (0.122)
+Epoch: [13][100/400]	Loss_cond 0.113 (0.120)
+saved images in  transfer_model/vis/dukemtmc/13/
+Epoch: [13][200/400]	Loss_cond 0.121 (0.120)
+Epoch: [13][300/400]	Loss_cond 0.130 (0.119)
+Epoch: [13][400/400]	Loss_cond 0.110 (0.119)
+Epoch: [14][100/400]	Loss_cond 0.138 (0.117)
+saved images in  transfer_model/vis/dukemtmc/14/
+Epoch: [14][200/400]	Loss_cond 0.115 (0.117)
+Epoch: [14][300/400]	Loss_cond 0.109 (0.117)
+Epoch: [14][400/400]	Loss_cond 0.094 (0.116)
+Epoch: [15][100/400]	Loss_cond 0.152 (0.115)
+saved images in  transfer_model/vis/dukemtmc/15/
+Epoch: [15][200/400]	Loss_cond 0.116 (0.115)
+Epoch: [15][300/400]	Loss_cond 0.104 (0.116)
+Epoch: [15][400/400]	Loss_cond 0.119 (0.115)
+Epoch: [16][100/400]	Loss_cond 0.106 (0.110)
+saved images in  transfer_model/vis/dukemtmc/16/
+Epoch: [16][200/400]	Loss_cond 0.096 (0.110)
+Epoch: [16][300/400]	Loss_cond 0.117 (0.112)
+Epoch: [16][400/400]	Loss_cond 0.119 (0.112)
+Epoch: [17][100/400]	Loss_cond 0.126 (0.111)
+saved images in  transfer_model/vis/dukemtmc/17/
+Epoch: [17][200/400]	Loss_cond 0.124 (0.112)
+Epoch: [17][300/400]	Loss_cond 0.085 (0.111)
+Epoch: [17][400/400]	Loss_cond 0.105 (0.111)
+Epoch: [18][100/400]	Loss_cond 0.091 (0.110)
+saved images in  transfer_model/vis/dukemtmc/18/
+Epoch: [18][200/400]	Loss_cond 0.100 (0.108)
+Epoch: [18][300/400]	Loss_cond 0.110 (0.108)
+Epoch: [18][400/400]	Loss_cond 0.111 (0.109)
+Epoch: [19][100/400]	Loss_cond 0.093 (0.107)
+saved images in  transfer_model/vis/dukemtmc/19/
+Epoch: [19][200/400]	Loss_cond 0.093 (0.107)
+Epoch: [19][300/400]	Loss_cond 0.095 (0.106)
+Epoch: [19][400/400]	Loss_cond 0.100 (0.106)
+Epoch: [20][100/400]	Loss_cond 0.103 (0.105)
+saved images in  transfer_model/vis/dukemtmc/20/
+Epoch: [20][200/400]	Loss_cond 0.096 (0.106)
+Epoch: [20][300/400]	Loss_cond 0.100 (0.105)
+Epoch: [20][400/400]	Loss_cond 0.104 (0.105)
+Epoch: [21][100/400]	Loss_cond 0.100 (0.102)
+saved images in  transfer_model/vis/dukemtmc/21/
+Epoch: [21][200/400]	Loss_cond 0.105 (0.104)
+Epoch: [21][300/400]	Loss_cond 0.099 (0.104)
+Epoch: [21][400/400]	Loss_cond 0.111 (0.105)
+Epoch: [22][100/400]	Loss_cond 0.115 (0.098)
+saved images in  transfer_model/vis/dukemtmc/22/
+Epoch: [22][200/400]	Loss_cond 0.087 (0.102)
+Epoch: [22][300/400]	Loss_cond 0.103 (0.101)
+Epoch: [22][400/400]	Loss_cond 0.117 (0.101)
+Epoch: [23][100/400]	Loss_cond 0.095 (0.102)
+saved images in  transfer_model/vis/dukemtmc/23/
+Epoch: [23][200/400]	Loss_cond 0.111 (0.102)
+Epoch: [23][300/400]	Loss_cond 0.115 (0.102)
+Epoch: [23][400/400]	Loss_cond 0.084 (0.101)
+Epoch: [24][100/400]	Loss_cond 0.089 (0.102)
+saved images in  transfer_model/vis/dukemtmc/24/
+Epoch: [24][200/400]	Loss_cond 0.104 (0.103)
+Epoch: [24][300/400]	Loss_cond 0.081 (0.101)
+Epoch: [24][400/400]	Loss_cond 0.087 (0.102)
+Epoch: [25][100/400]	Loss_cond 0.091 (0.098)
+saved images in  transfer_model/vis/dukemtmc/25/
+Epoch: [25][200/400]	Loss_cond 0.081 (0.098)
+Epoch: [25][300/400]	Loss_cond 0.087 (0.098)
+Epoch: [25][400/400]	Loss_cond 0.124 (0.098)
+Epoch: [26][100/400]	Loss_cond 0.109 (0.098)
+saved images in  transfer_model/vis/dukemtmc/26/
+Epoch: [26][200/400]	Loss_cond 0.097 (0.097)
+Epoch: [26][300/400]	Loss_cond 0.114 (0.098)
+Epoch: [26][400/400]	Loss_cond 0.092 (0.098)
+Epoch: [27][100/400]	Loss_cond 0.082 (0.095)
+saved images in  transfer_model/vis/dukemtmc/27/
+Epoch: [27][200/400]	Loss_cond 0.092 (0.096)
+Epoch: [27][300/400]	Loss_cond 0.099 (0.097)
+Epoch: [27][400/400]	Loss_cond 0.088 (0.096)
+Epoch: [28][100/400]	Loss_cond 0.090 (0.096)
+saved images in  transfer_model/vis/dukemtmc/28/
+Epoch: [28][200/400]	Loss_cond 0.108 (0.095)
+Epoch: [28][300/400]	Loss_cond 0.086 (0.095)
+Epoch: [28][400/400]	Loss_cond 0.078 (0.095)
+Epoch: [29][100/400]	Loss_cond 0.108 (0.093)
+saved images in  transfer_model/vis/dukemtmc/29/
+Epoch: [29][200/400]	Loss_cond 0.105 (0.094)
+Epoch: [29][300/400]	Loss_cond 0.104 (0.095)
+Epoch: [29][400/400]	Loss_cond 0.097 (0.095)
+Epoch: [30][100/400]	Loss_cond 0.078 (0.095)
+saved images in  transfer_model/vis/dukemtmc/30/
+Epoch: [30][200/400]	Loss_cond 0.081 (0.093)
+Epoch: [30][300/400]	Loss_cond 0.080 (0.094)
+Epoch: [30][400/400]	Loss_cond 0.079 (0.093)
+Epoch: [31][100/400]	Loss_cond 0.079 (0.093)
+saved images in  transfer_model/vis/dukemtmc/31/
+Epoch: [31][200/400]	Loss_cond 0.118 (0.095)
+Epoch: [31][300/400]	Loss_cond 0.092 (0.094)
+Epoch: [31][400/400]	Loss_cond 0.085 (0.094)
+Epoch: [32][100/400]	Loss_cond 0.099 (0.093)
+saved images in  transfer_model/vis/dukemtmc/32/
+Epoch: [32][200/400]	Loss_cond 0.085 (0.093)
+Epoch: [32][300/400]	Loss_cond 0.072 (0.092)
+Epoch: [32][400/400]	Loss_cond 0.101 (0.092)
+Epoch: [33][100/400]	Loss_cond 0.095 (0.092)
+saved images in  transfer_model/vis/dukemtmc/33/
+Epoch: [33][200/400]	Loss_cond 0.086 (0.092)
+Epoch: [33][300/400]	Loss_cond 0.089 (0.092)
+Epoch: [33][400/400]	Loss_cond 0.107 (0.091)
+Epoch: [34][100/400]	Loss_cond 0.089 (0.093)
+saved images in  transfer_model/vis/dukemtmc/34/
+Epoch: [34][200/400]	Loss_cond 0.102 (0.093)
+Epoch: [34][300/400]	Loss_cond 0.120 (0.092)
+Epoch: [34][400/400]	Loss_cond 0.075 (0.092)
+Epoch: [35][100/400]	Loss_cond 0.080 (0.092)
+saved images in  transfer_model/vis/dukemtmc/35/
+Epoch: [35][200/400]	Loss_cond 0.075 (0.091)
+Epoch: [35][300/400]	Loss_cond 0.081 (0.090)
+Epoch: [35][400/400]	Loss_cond 0.100 (0.090)
+Epoch: [36][100/400]	Loss_cond 0.096 (0.087)
+saved images in  transfer_model/vis/dukemtmc/36/
+Epoch: [36][200/400]	Loss_cond 0.074 (0.088)
+Epoch: [36][300/400]	Loss_cond 0.089 (0.090)
+Epoch: [36][400/400]	Loss_cond 0.074 (0.089)
+Epoch: [37][100/400]	Loss_cond 0.085 (0.087)
+saved images in  transfer_model/vis/dukemtmc/37/
+Epoch: [37][200/400]	Loss_cond 0.091 (0.086)
+Epoch: [37][300/400]	Loss_cond 0.071 (0.087)
+Epoch: [37][400/400]	Loss_cond 0.081 (0.087)
+Epoch: [38][100/400]	Loss_cond 0.097 (0.088)
+saved images in  transfer_model/vis/dukemtmc/38/
+Epoch: [38][200/400]	Loss_cond 0.068 (0.088)
+Epoch: [38][300/400]	Loss_cond 0.086 (0.089)
+Epoch: [38][400/400]	Loss_cond 0.097 (0.088)
+Epoch: [39][100/400]	Loss_cond 0.081 (0.089)
+saved images in  transfer_model/vis/dukemtmc/39/
+Epoch: [39][200/400]	Loss_cond 0.076 (0.086)
+Epoch: [39][300/400]	Loss_cond 0.070 (0.087)
+Epoch: [39][400/400]	Loss_cond 0.063 (0.088)
+Epoch: [40][100/400]	Loss_cond 0.103 (0.088)
+saved images in  transfer_model/vis/dukemtmc/40/
+Epoch: [40][200/400]	Loss_cond 0.072 (0.087)
+Epoch: [40][300/400]	Loss_cond 0.085 (0.088)
+Epoch: [40][400/400]	Loss_cond 0.092 (0.088)
+Epoch: [41][100/400]	Loss_cond 0.077 (0.083)
+saved images in  transfer_model/vis/dukemtmc/41/
+Epoch: [41][200/400]	Loss_cond 0.077 (0.086)
+Epoch: [41][300/400]	Loss_cond 0.100 (0.085)
+Epoch: [41][400/400]	Loss_cond 0.070 (0.085)
+Epoch: [42][100/400]	Loss_cond 0.092 (0.086)
+saved images in  transfer_model/vis/dukemtmc/42/
+Epoch: [42][200/400]	Loss_cond 0.080 (0.084)
+Epoch: [42][300/400]	Loss_cond 0.072 (0.085)
+Epoch: [42][400/400]	Loss_cond 0.091 (0.086)
+Epoch: [43][100/400]	Loss_cond 0.073 (0.084)
+saved images in  transfer_model/vis/dukemtmc/43/
+Epoch: [43][200/400]	Loss_cond 0.089 (0.085)
+Epoch: [43][300/400]	Loss_cond 0.101 (0.084)
+Epoch: [43][400/400]	Loss_cond 0.070 (0.083)
+Epoch: [44][100/400]	Loss_cond 0.100 (0.084)
+saved images in  transfer_model/vis/dukemtmc/44/
+Epoch: [44][200/400]	Loss_cond 0.095 (0.084)
+Epoch: [44][300/400]	Loss_cond 0.073 (0.085)
+Epoch: [44][400/400]	Loss_cond 0.072 (0.084)
+Epoch: [45][100/400]	Loss_cond 0.083 (0.085)
+saved images in  transfer_model/vis/dukemtmc/45/
+Epoch: [45][200/400]	Loss_cond 0.092 (0.084)
+Epoch: [45][300/400]	Loss_cond 0.085 (0.083)
+Epoch: [45][400/400]	Loss_cond 0.081 (0.084)
+Epoch: [46][100/400]	Loss_cond 0.095 (0.084)
+saved images in  transfer_model/vis/dukemtmc/46/
+Epoch: [46][200/400]	Loss_cond 0.104 (0.083)
+Epoch: [46][300/400]	Loss_cond 0.085 (0.084)
+Epoch: [46][400/400]	Loss_cond 0.077 (0.084)
+Epoch: [47][100/400]	Loss_cond 0.100 (0.086)
+saved images in  transfer_model/vis/dukemtmc/47/
+Epoch: [47][200/400]	Loss_cond 0.067 (0.084)
+Epoch: [47][300/400]	Loss_cond 0.076 (0.084)
+Epoch: [47][400/400]	Loss_cond 0.096 (0.084)
+Epoch: [48][100/400]	Loss_cond 0.072 (0.083)
+saved images in  transfer_model/vis/dukemtmc/48/
+Epoch: [48][200/400]	Loss_cond 0.096 (0.083)
+Epoch: [48][300/400]	Loss_cond 0.110 (0.082)
+Epoch: [48][400/400]	Loss_cond 0.066 (0.082)
+Epoch: [49][100/400]	Loss_cond 0.084 (0.083)
+saved images in  transfer_model/vis/dukemtmc/49/
+Epoch: [49][200/400]	Loss_cond 0.067 (0.081)
+Epoch: [49][300/400]	Loss_cond 0.084 (0.081)
+Epoch: [49][400/400]	Loss_cond 0.077 (0.081)
+creating model!!
+using mobilenet-v3!!!!
+Param count for AKPNet's initialized parameters: 1105348
+generating trainer!!
+start training on  market1501
+Epoch: [0][100/400]	Loss_cond 0.388 (0.748)
+saved images in  transfer_model/vis/market1501/0/
+Epoch: [0][200/400]	Loss_cond 0.309 (0.543)
+Epoch: [0][300/400]	Loss_cond 0.266 (0.451)
+Epoch: [0][400/400]	Loss_cond 0.201 (0.395)
+Epoch: [1][100/400]	Loss_cond 0.186 (0.206)
+saved images in  transfer_model/vis/market1501/1/
+Epoch: [1][200/400]	Loss_cond 0.191 (0.199)
+Epoch: [1][300/400]	Loss_cond 0.170 (0.195)
+Epoch: [1][400/400]	Loss_cond 0.160 (0.189)
+Epoch: [2][100/400]	Loss_cond 0.174 (0.170)
+saved images in  transfer_model/vis/market1501/2/
+Epoch: [2][200/400]	Loss_cond 0.202 (0.166)
+Epoch: [2][300/400]	Loss_cond 0.157 (0.163)
+Epoch: [2][400/400]	Loss_cond 0.141 (0.161)
+Epoch: [3][100/400]	Loss_cond 0.144 (0.152)
+saved images in  transfer_model/vis/market1501/3/
+Epoch: [3][200/400]	Loss_cond 0.149 (0.149)
+Epoch: [3][300/400]	Loss_cond 0.150 (0.146)
+Epoch: [3][400/400]	Loss_cond 0.120 (0.146)
+Epoch: [4][100/400]	Loss_cond 0.117 (0.141)
+saved images in  transfer_model/vis/market1501/4/
+Epoch: [4][200/400]	Loss_cond 0.136 (0.138)
+Epoch: [4][300/400]	Loss_cond 0.128 (0.136)
+Epoch: [4][400/400]	Loss_cond 0.119 (0.134)
+Epoch: [5][100/400]	Loss_cond 0.146 (0.127)
+saved images in  transfer_model/vis/market1501/5/
+Epoch: [5][200/400]	Loss_cond 0.135 (0.127)
+Epoch: [5][300/400]	Loss_cond 0.105 (0.128)
+Epoch: [5][400/400]	Loss_cond 0.113 (0.126)
+Epoch: [6][100/400]	Loss_cond 0.127 (0.123)
+saved images in  transfer_model/vis/market1501/6/
+Epoch: [6][200/400]	Loss_cond 0.110 (0.122)
+Epoch: [6][300/400]	Loss_cond 0.157 (0.122)
+Epoch: [6][400/400]	Loss_cond 0.126 (0.120)
+Epoch: [7][100/400]	Loss_cond 0.110 (0.117)
+saved images in  transfer_model/vis/market1501/7/
+Epoch: [7][200/400]	Loss_cond 0.139 (0.117)
+Epoch: [7][300/400]	Loss_cond 0.095 (0.116)
+Epoch: [7][400/400]	Loss_cond 0.120 (0.116)
+Epoch: [8][100/400]	Loss_cond 0.131 (0.112)
+saved images in  transfer_model/vis/market1501/8/
+Epoch: [8][200/400]	Loss_cond 0.126 (0.113)
+Epoch: [8][300/400]	Loss_cond 0.137 (0.112)
+Epoch: [8][400/400]	Loss_cond 0.124 (0.112)
+Epoch: [9][100/400]	Loss_cond 0.088 (0.109)
+saved images in  transfer_model/vis/market1501/9/
+Epoch: [9][200/400]	Loss_cond 0.116 (0.107)
+Epoch: [9][300/400]	Loss_cond 0.104 (0.109)
+Epoch: [9][400/400]	Loss_cond 0.125 (0.108)
+Epoch: [10][100/400]	Loss_cond 0.098 (0.105)
+saved images in  transfer_model/vis/market1501/10/
+Epoch: [10][200/400]	Loss_cond 0.091 (0.104)
+Epoch: [10][300/400]	Loss_cond 0.101 (0.104)
+Epoch: [10][400/400]	Loss_cond 0.097 (0.104)
+Epoch: [11][100/400]	Loss_cond 0.095 (0.102)
+saved images in  transfer_model/vis/market1501/11/
+Epoch: [11][200/400]	Loss_cond 0.092 (0.102)
+Epoch: [11][300/400]	Loss_cond 0.122 (0.101)
+Epoch: [11][400/400]	Loss_cond 0.092 (0.101)
+Epoch: [12][100/400]	Loss_cond 0.096 (0.103)
+saved images in  transfer_model/vis/market1501/12/
+Epoch: [12][200/400]	Loss_cond 0.083 (0.103)
+Epoch: [12][300/400]	Loss_cond 0.101 (0.102)
+Epoch: [12][400/400]	Loss_cond 0.077 (0.101)
+Epoch: [13][100/400]	Loss_cond 0.090 (0.101)
+saved images in  transfer_model/vis/market1501/13/
+Epoch: [13][200/400]	Loss_cond 0.121 (0.098)
+Epoch: [13][300/400]	Loss_cond 0.098 (0.099)
+Epoch: [13][400/400]	Loss_cond 0.094 (0.098)
+Epoch: [14][100/400]	Loss_cond 0.084 (0.098)
+saved images in  transfer_model/vis/market1501/14/
+Epoch: [14][200/400]	Loss_cond 0.072 (0.095)
+Epoch: [14][300/400]	Loss_cond 0.088 (0.096)
+Epoch: [14][400/400]	Loss_cond 0.091 (0.096)
+Epoch: [15][100/400]	Loss_cond 0.092 (0.095)
+saved images in  transfer_model/vis/market1501/15/
+Epoch: [15][200/400]	Loss_cond 0.083 (0.093)
+Epoch: [15][300/400]	Loss_cond 0.094 (0.093)
+Epoch: [15][400/400]	Loss_cond 0.108 (0.093)
+Epoch: [16][100/400]	Loss_cond 0.083 (0.090)
+saved images in  transfer_model/vis/market1501/16/
+Epoch: [16][200/400]	Loss_cond 0.095 (0.089)
+Epoch: [16][300/400]	Loss_cond 0.081 (0.090)
+Epoch: [16][400/400]	Loss_cond 0.099 (0.090)
+Epoch: [17][100/400]	Loss_cond 0.099 (0.089)
+saved images in  transfer_model/vis/market1501/17/
+Epoch: [17][200/400]	Loss_cond 0.087 (0.088)
+Epoch: [17][300/400]	Loss_cond 0.111 (0.088)
+Epoch: [17][400/400]	Loss_cond 0.087 (0.089)
+Epoch: [18][100/400]	Loss_cond 0.071 (0.090)
+saved images in  transfer_model/vis/market1501/18/
+Epoch: [18][200/400]	Loss_cond 0.078 (0.088)
+Epoch: [18][300/400]	Loss_cond 0.109 (0.088)
+Epoch: [18][400/400]	Loss_cond 0.102 (0.088)
+Epoch: [19][100/400]	Loss_cond 0.080 (0.087)
+saved images in  transfer_model/vis/market1501/19/
+Epoch: [19][200/400]	Loss_cond 0.088 (0.087)
+Epoch: [19][300/400]	Loss_cond 0.088 (0.088)
+Epoch: [19][400/400]	Loss_cond 0.079 (0.087)
+Epoch: [20][100/400]	Loss_cond 0.077 (0.088)
+saved images in  transfer_model/vis/market1501/20/
+Epoch: [20][200/400]	Loss_cond 0.089 (0.087)
+Epoch: [20][300/400]	Loss_cond 0.073 (0.086)
+Epoch: [20][400/400]	Loss_cond 0.074 (0.086)
+Epoch: [21][100/400]	Loss_cond 0.103 (0.085)
+saved images in  transfer_model/vis/market1501/21/
+Epoch: [21][200/400]	Loss_cond 0.099 (0.083)
+Epoch: [21][300/400]	Loss_cond 0.070 (0.083)
+Epoch: [21][400/400]	Loss_cond 0.077 (0.084)
+Epoch: [22][100/400]	Loss_cond 0.083 (0.084)
+saved images in  transfer_model/vis/market1501/22/
+Epoch: [22][200/400]	Loss_cond 0.074 (0.084)
+Epoch: [22][300/400]	Loss_cond 0.072 (0.083)
+Epoch: [22][400/400]	Loss_cond 0.088 (0.083)
+Epoch: [23][100/400]	Loss_cond 0.081 (0.083)
+saved images in  transfer_model/vis/market1501/23/
+Epoch: [23][200/400]	Loss_cond 0.079 (0.082)
+Epoch: [23][300/400]	Loss_cond 0.071 (0.083)
+Epoch: [23][400/400]	Loss_cond 0.069 (0.083)
+Epoch: [24][100/400]	Loss_cond 0.082 (0.080)
+saved images in  transfer_model/vis/market1501/24/
+Epoch: [24][200/400]	Loss_cond 0.075 (0.081)
+Epoch: [24][300/400]	Loss_cond 0.086 (0.081)
+Epoch: [24][400/400]	Loss_cond 0.085 (0.081)
+Epoch: [25][100/400]	Loss_cond 0.103 (0.081)
+saved images in  transfer_model/vis/market1501/25/
+Epoch: [25][200/400]	Loss_cond 0.074 (0.080)
+Epoch: [25][300/400]	Loss_cond 0.065 (0.080)
+Epoch: [25][400/400]	Loss_cond 0.083 (0.080)
+Epoch: [26][100/400]	Loss_cond 0.097 (0.081)
+saved images in  transfer_model/vis/market1501/26/
+Epoch: [26][200/400]	Loss_cond 0.075 (0.080)
+Epoch: [26][300/400]	Loss_cond 0.087 (0.079)
+Epoch: [26][400/400]	Loss_cond 0.067 (0.079)
+Epoch: [27][100/400]	Loss_cond 0.085 (0.078)
+saved images in  transfer_model/vis/market1501/27/
+Epoch: [27][200/400]	Loss_cond 0.070 (0.078)
+Epoch: [27][300/400]	Loss_cond 0.067 (0.078)
+Epoch: [27][400/400]	Loss_cond 0.067 (0.078)
+Epoch: [28][100/400]	Loss_cond 0.066 (0.076)
+saved images in  transfer_model/vis/market1501/28/
+Epoch: [28][200/400]	Loss_cond 0.061 (0.077)
+Epoch: [28][300/400]	Loss_cond 0.073 (0.078)
+Epoch: [28][400/400]	Loss_cond 0.070 (0.078)
+Epoch: [29][100/400]	Loss_cond 0.080 (0.077)
+saved images in  transfer_model/vis/market1501/29/
+Epoch: [29][200/400]	Loss_cond 0.072 (0.077)
+Epoch: [29][300/400]	Loss_cond 0.089 (0.077)
+Epoch: [29][400/400]	Loss_cond 0.074 (0.076)
+Epoch: [30][100/400]	Loss_cond 0.074 (0.076)
+saved images in  transfer_model/vis/market1501/30/
+Epoch: [30][200/400]	Loss_cond 0.068 (0.078)
+Epoch: [30][300/400]	Loss_cond 0.085 (0.078)
+Epoch: [30][400/400]	Loss_cond 0.062 (0.077)
+Epoch: [31][100/400]	Loss_cond 0.067 (0.073)
+saved images in  transfer_model/vis/market1501/31/
+Epoch: [31][200/400]	Loss_cond 0.068 (0.074)
+Epoch: [31][300/400]	Loss_cond 0.060 (0.075)
+Epoch: [31][400/400]	Loss_cond 0.062 (0.074)
+Epoch: [32][100/400]	Loss_cond 0.058 (0.074)
+saved images in  transfer_model/vis/market1501/32/
+Epoch: [32][200/400]	Loss_cond 0.088 (0.074)
+Epoch: [32][300/400]	Loss_cond 0.068 (0.075)
+Epoch: [32][400/400]	Loss_cond 0.070 (0.074)
+Epoch: [33][100/400]	Loss_cond 0.077 (0.076)
+saved images in  transfer_model/vis/market1501/33/
+Epoch: [33][200/400]	Loss_cond 0.061 (0.077)
+Epoch: [33][300/400]	Loss_cond 0.069 (0.076)
+Epoch: [33][400/400]	Loss_cond 0.081 (0.076)
+Epoch: [34][100/400]	Loss_cond 0.063 (0.071)
+saved images in  transfer_model/vis/market1501/34/
+Epoch: [34][200/400]	Loss_cond 0.067 (0.072)
+Epoch: [34][300/400]	Loss_cond 0.081 (0.072)
+Epoch: [34][400/400]	Loss_cond 0.077 (0.072)
+Epoch: [35][100/400]	Loss_cond 0.104 (0.075)
+saved images in  transfer_model/vis/market1501/35/
+Epoch: [35][200/400]	Loss_cond 0.071 (0.074)
+Epoch: [35][300/400]	Loss_cond 0.068 (0.073)
+Epoch: [35][400/400]	Loss_cond 0.077 (0.073)
+Epoch: [36][100/400]	Loss_cond 0.074 (0.072)
+saved images in  transfer_model/vis/market1501/36/
+Epoch: [36][200/400]	Loss_cond 0.073 (0.072)
+Epoch: [36][300/400]	Loss_cond 0.073 (0.071)
+Epoch: [36][400/400]	Loss_cond 0.081 (0.072)
+Epoch: [37][100/400]	Loss_cond 0.056 (0.070)
+saved images in  transfer_model/vis/market1501/37/
+Epoch: [37][200/400]	Loss_cond 0.055 (0.070)
+Epoch: [37][300/400]	Loss_cond 0.079 (0.070)
+Epoch: [37][400/400]	Loss_cond 0.085 (0.070)
+Epoch: [38][100/400]	Loss_cond 0.081 (0.071)
+saved images in  transfer_model/vis/market1501/38/
+Epoch: [38][200/400]	Loss_cond 0.055 (0.070)
+Epoch: [38][300/400]	Loss_cond 0.069 (0.070)
+Epoch: [38][400/400]	Loss_cond 0.058 (0.070)
+Epoch: [39][100/400]	Loss_cond 0.077 (0.068)
+saved images in  transfer_model/vis/market1501/39/
+Epoch: [39][200/400]	Loss_cond 0.056 (0.069)
+Epoch: [39][300/400]	Loss_cond 0.074 (0.070)
+Epoch: [39][400/400]	Loss_cond 0.064 (0.070)
+Epoch: [40][100/400]	Loss_cond 0.070 (0.071)
+saved images in  transfer_model/vis/market1501/40/
+Epoch: [40][200/400]	Loss_cond 0.073 (0.070)
+Epoch: [40][300/400]	Loss_cond 0.060 (0.070)
+Epoch: [40][400/400]	Loss_cond 0.062 (0.070)
+Epoch: [41][100/400]	Loss_cond 0.064 (0.069)
+saved images in  transfer_model/vis/market1501/41/
+Epoch: [41][200/400]	Loss_cond 0.074 (0.069)
+Epoch: [41][300/400]	Loss_cond 0.063 (0.069)
+Epoch: [41][400/400]	Loss_cond 0.062 (0.069)
+Epoch: [42][100/400]	Loss_cond 0.064 (0.070)
+saved images in  transfer_model/vis/market1501/42/
+Epoch: [42][200/400]	Loss_cond 0.072 (0.069)
+Epoch: [42][300/400]	Loss_cond 0.072 (0.069)
+Epoch: [42][400/400]	Loss_cond 0.065 (0.069)
+Epoch: [43][100/400]	Loss_cond 0.058 (0.068)
+saved images in  transfer_model/vis/market1501/43/
+Epoch: [43][200/400]	Loss_cond 0.077 (0.068)
+Epoch: [43][300/400]	Loss_cond 0.085 (0.068)
+Epoch: [43][400/400]	Loss_cond 0.067 (0.068)
+Epoch: [44][100/400]	Loss_cond 0.056 (0.067)
+saved images in  transfer_model/vis/market1501/44/
+Epoch: [44][200/400]	Loss_cond 0.074 (0.068)
+Epoch: [44][300/400]	Loss_cond 0.076 (0.068)
+Epoch: [44][400/400]	Loss_cond 0.058 (0.068)
+Epoch: [45][100/400]	Loss_cond 0.072 (0.069)
+saved images in  transfer_model/vis/market1501/45/
+Epoch: [45][200/400]	Loss_cond 0.063 (0.067)
+Epoch: [45][300/400]	Loss_cond 0.058 (0.067)
+Epoch: [45][400/400]	Loss_cond 0.064 (0.067)
+Epoch: [46][100/400]	Loss_cond 0.061 (0.066)
+saved images in  transfer_model/vis/market1501/46/
+Epoch: [46][200/400]	Loss_cond 0.059 (0.067)
+Epoch: [46][300/400]	Loss_cond 0.085 (0.067)
+Epoch: [46][400/400]	Loss_cond 0.054 (0.067)
+Epoch: [47][100/400]	Loss_cond 0.074 (0.064)
+saved images in  transfer_model/vis/market1501/47/
+Epoch: [47][200/400]	Loss_cond 0.066 (0.065)
+Epoch: [47][300/400]	Loss_cond 0.067 (0.066)
+Epoch: [47][400/400]	Loss_cond 0.058 (0.066)
+Epoch: [48][100/400]	Loss_cond 0.071 (0.064)
+saved images in  transfer_model/vis/market1501/48/
+Epoch: [48][200/400]	Loss_cond 0.064 (0.065)
+Epoch: [48][300/400]	Loss_cond 0.074 (0.065)
+Epoch: [48][400/400]	Loss_cond 0.061 (0.065)
+Epoch: [49][100/400]	Loss_cond 0.079 (0.066)
+saved images in  transfer_model/vis/market1501/49/
+Epoch: [49][200/400]	Loss_cond 0.068 (0.066)
+Epoch: [49][300/400]	Loss_cond 0.064 (0.066)
+Epoch: [49][400/400]	Loss_cond 0.072 (0.066)
+creating model!!
+using mobilenet-v3!!!!
+Param count for AKPNet's initialized parameters: 1105348
+generating trainer!!
+start training on  cuhk_sysu
+Epoch: [0][100/400]	Loss_cond 0.449 (0.780)
+saved images in  transfer_model/vis/cuhk_sysu/0/
+Epoch: [0][200/400]	Loss_cond 0.377 (0.593)
+Epoch: [0][300/400]	Loss_cond 0.322 (0.510)
+Epoch: [0][400/400]	Loss_cond 0.347 (0.458)
+Epoch: [1][100/400]	Loss_cond 0.251 (0.280)
+saved images in  transfer_model/vis/cuhk_sysu/1/
+Epoch: [1][200/400]	Loss_cond 0.255 (0.272)
+Epoch: [1][300/400]	Loss_cond 0.258 (0.264)
+Epoch: [1][400/400]	Loss_cond 0.280 (0.258)
+Epoch: [2][100/400]	Loss_cond 0.235 (0.229)
+saved images in  transfer_model/vis/cuhk_sysu/2/
+Epoch: [2][200/400]	Loss_cond 0.242 (0.224)
+Epoch: [2][300/400]	Loss_cond 0.244 (0.220)
+Epoch: [2][400/400]	Loss_cond 0.180 (0.217)
+Epoch: [3][100/400]	Loss_cond 0.181 (0.195)
+saved images in  transfer_model/vis/cuhk_sysu/3/
+Epoch: [3][200/400]	Loss_cond 0.194 (0.195)
+Epoch: [3][300/400]	Loss_cond 0.246 (0.194)
+Epoch: [3][400/400]	Loss_cond 0.204 (0.192)
+Epoch: [4][100/400]	Loss_cond 0.182 (0.182)
+saved images in  transfer_model/vis/cuhk_sysu/4/
+Epoch: [4][200/400]	Loss_cond 0.196 (0.181)
+Epoch: [4][300/400]	Loss_cond 0.182 (0.179)
+Epoch: [4][400/400]	Loss_cond 0.173 (0.177)
+Epoch: [5][100/400]	Loss_cond 0.147 (0.169)
+saved images in  transfer_model/vis/cuhk_sysu/5/
+Epoch: [5][200/400]	Loss_cond 0.162 (0.167)
+Epoch: [5][300/400]	Loss_cond 0.136 (0.166)
+Epoch: [5][400/400]	Loss_cond 0.162 (0.165)
+Epoch: [6][100/400]	Loss_cond 0.136 (0.157)
+saved images in  transfer_model/vis/cuhk_sysu/6/
+Epoch: [6][200/400]	Loss_cond 0.148 (0.156)
+Epoch: [6][300/400]	Loss_cond 0.128 (0.156)
+Epoch: [6][400/400]	Loss_cond 0.145 (0.155)
+Epoch: [7][100/400]	Loss_cond 0.150 (0.151)
+saved images in  transfer_model/vis/cuhk_sysu/7/
+Epoch: [7][200/400]	Loss_cond 0.148 (0.149)
+Epoch: [7][300/400]	Loss_cond 0.146 (0.149)
+Epoch: [7][400/400]	Loss_cond 0.149 (0.147)
+Epoch: [8][100/400]	Loss_cond 0.133 (0.148)
+saved images in  transfer_model/vis/cuhk_sysu/8/
+Epoch: [8][200/400]	Loss_cond 0.136 (0.148)
+Epoch: [8][300/400]	Loss_cond 0.135 (0.145)
+Epoch: [8][400/400]	Loss_cond 0.178 (0.143)
+Epoch: [9][100/400]	Loss_cond 0.118 (0.139)
+saved images in  transfer_model/vis/cuhk_sysu/9/
+Epoch: [9][200/400]	Loss_cond 0.147 (0.140)
+Epoch: [9][300/400]	Loss_cond 0.146 (0.138)
+Epoch: [9][400/400]	Loss_cond 0.142 (0.137)
+Epoch: [10][100/400]	Loss_cond 0.139 (0.136)
+saved images in  transfer_model/vis/cuhk_sysu/10/
+Epoch: [10][200/400]	Loss_cond 0.149 (0.135)
+Epoch: [10][300/400]	Loss_cond 0.136 (0.133)
+Epoch: [10][400/400]	Loss_cond 0.161 (0.133)
+Epoch: [11][100/400]	Loss_cond 0.140 (0.136)
+saved images in  transfer_model/vis/cuhk_sysu/11/
+Epoch: [11][200/400]	Loss_cond 0.120 (0.132)
+Epoch: [11][300/400]	Loss_cond 0.132 (0.130)
+Epoch: [11][400/400]	Loss_cond 0.128 (0.130)
+Epoch: [12][100/400]	Loss_cond 0.111 (0.128)
+saved images in  transfer_model/vis/cuhk_sysu/12/
+Epoch: [12][200/400]	Loss_cond 0.134 (0.128)
+Epoch: [12][300/400]	Loss_cond 0.155 (0.127)
+Epoch: [12][400/400]	Loss_cond 0.123 (0.127)
+Epoch: [13][100/400]	Loss_cond 0.107 (0.125)
+saved images in  transfer_model/vis/cuhk_sysu/13/
+Epoch: [13][200/400]	Loss_cond 0.137 (0.126)
+Epoch: [13][300/400]	Loss_cond 0.142 (0.124)
+Epoch: [13][400/400]	Loss_cond 0.158 (0.124)
+Epoch: [14][100/400]	Loss_cond 0.101 (0.121)
+saved images in  transfer_model/vis/cuhk_sysu/14/
+Epoch: [14][200/400]	Loss_cond 0.130 (0.123)
+Epoch: [14][300/400]	Loss_cond 0.121 (0.122)
+Epoch: [14][400/400]	Loss_cond 0.144 (0.121)
+Epoch: [15][100/400]	Loss_cond 0.127 (0.121)
+saved images in  transfer_model/vis/cuhk_sysu/15/
+Epoch: [15][200/400]	Loss_cond 0.109 (0.120)
+Epoch: [15][300/400]	Loss_cond 0.103 (0.119)
+Epoch: [15][400/400]	Loss_cond 0.127 (0.120)
+Epoch: [16][100/400]	Loss_cond 0.106 (0.115)
+saved images in  transfer_model/vis/cuhk_sysu/16/
+Epoch: [16][200/400]	Loss_cond 0.106 (0.115)
+Epoch: [16][300/400]	Loss_cond 0.132 (0.116)
+Epoch: [16][400/400]	Loss_cond 0.118 (0.116)
+Epoch: [17][100/400]	Loss_cond 0.143 (0.116)
+saved images in  transfer_model/vis/cuhk_sysu/17/
+Epoch: [17][200/400]	Loss_cond 0.092 (0.115)
+Epoch: [17][300/400]	Loss_cond 0.165 (0.116)
+Epoch: [17][400/400]	Loss_cond 0.126 (0.115)
+Epoch: [18][100/400]	Loss_cond 0.102 (0.113)
+saved images in  transfer_model/vis/cuhk_sysu/18/
+Epoch: [18][200/400]	Loss_cond 0.089 (0.112)
+Epoch: [18][300/400]	Loss_cond 0.125 (0.111)
+Epoch: [18][400/400]	Loss_cond 0.109 (0.111)
+Epoch: [19][100/400]	Loss_cond 0.087 (0.112)
+saved images in  transfer_model/vis/cuhk_sysu/19/
+Epoch: [19][200/400]	Loss_cond 0.114 (0.110)
+Epoch: [19][300/400]	Loss_cond 0.102 (0.111)
+Epoch: [19][400/400]	Loss_cond 0.102 (0.110)
+Epoch: [20][100/400]	Loss_cond 0.091 (0.109)
+saved images in  transfer_model/vis/cuhk_sysu/20/
+Epoch: [20][200/400]	Loss_cond 0.100 (0.110)
+Epoch: [20][300/400]	Loss_cond 0.126 (0.109)
+Epoch: [20][400/400]	Loss_cond 0.112 (0.109)
+Epoch: [21][100/400]	Loss_cond 0.144 (0.106)
+saved images in  transfer_model/vis/cuhk_sysu/21/
+Epoch: [21][200/400]	Loss_cond 0.094 (0.106)
+Epoch: [21][300/400]	Loss_cond 0.096 (0.107)
+Epoch: [21][400/400]	Loss_cond 0.101 (0.107)
+Epoch: [22][100/400]	Loss_cond 0.106 (0.105)
+saved images in  transfer_model/vis/cuhk_sysu/22/
+Epoch: [22][200/400]	Loss_cond 0.088 (0.105)
+Epoch: [22][300/400]	Loss_cond 0.102 (0.104)
+Epoch: [22][400/400]	Loss_cond 0.102 (0.105)
+Epoch: [23][100/400]	Loss_cond 0.113 (0.106)
+saved images in  transfer_model/vis/cuhk_sysu/23/
+Epoch: [23][200/400]	Loss_cond 0.117 (0.105)
+Epoch: [23][300/400]	Loss_cond 0.118 (0.105)
+Epoch: [23][400/400]	Loss_cond 0.096 (0.105)
+Epoch: [24][100/400]	Loss_cond 0.119 (0.104)
+saved images in  transfer_model/vis/cuhk_sysu/24/
+Epoch: [24][200/400]	Loss_cond 0.105 (0.104)
+Epoch: [24][300/400]	Loss_cond 0.101 (0.104)
+Epoch: [24][400/400]	Loss_cond 0.093 (0.104)
+Epoch: [25][100/400]	Loss_cond 0.089 (0.102)
+saved images in  transfer_model/vis/cuhk_sysu/25/
+Epoch: [25][200/400]	Loss_cond 0.090 (0.102)
+Epoch: [25][300/400]	Loss_cond 0.096 (0.100)
+Epoch: [25][400/400]	Loss_cond 0.098 (0.100)
+Epoch: [26][100/400]	Loss_cond 0.084 (0.099)
+saved images in  transfer_model/vis/cuhk_sysu/26/
+Epoch: [26][200/400]	Loss_cond 0.078 (0.100)
+Epoch: [26][300/400]	Loss_cond 0.076 (0.099)
+Epoch: [26][400/400]	Loss_cond 0.098 (0.100)
+Epoch: [27][100/400]	Loss_cond 0.099 (0.099)
+saved images in  transfer_model/vis/cuhk_sysu/27/
+Epoch: [27][200/400]	Loss_cond 0.095 (0.100)
+Epoch: [27][300/400]	Loss_cond 0.099 (0.099)
+Epoch: [27][400/400]	Loss_cond 0.101 (0.099)
+Epoch: [28][100/400]	Loss_cond 0.088 (0.101)
+saved images in  transfer_model/vis/cuhk_sysu/28/
+Epoch: [28][200/400]	Loss_cond 0.108 (0.099)
+Epoch: [28][300/400]	Loss_cond 0.094 (0.097)
+Epoch: [28][400/400]	Loss_cond 0.098 (0.098)
+Epoch: [29][100/400]	Loss_cond 0.086 (0.097)
+saved images in  transfer_model/vis/cuhk_sysu/29/
+Epoch: [29][200/400]	Loss_cond 0.109 (0.097)
+Epoch: [29][300/400]	Loss_cond 0.084 (0.097)
+Epoch: [29][400/400]	Loss_cond 0.095 (0.096)
+Epoch: [30][100/400]	Loss_cond 0.095 (0.097)
+saved images in  transfer_model/vis/cuhk_sysu/30/
+Epoch: [30][200/400]	Loss_cond 0.115 (0.096)
+Epoch: [30][300/400]	Loss_cond 0.103 (0.096)
+Epoch: [30][400/400]	Loss_cond 0.071 (0.096)
+Epoch: [31][100/400]	Loss_cond 0.118 (0.097)
+saved images in  transfer_model/vis/cuhk_sysu/31/
+Epoch: [31][200/400]	Loss_cond 0.095 (0.097)
+Epoch: [31][300/400]	Loss_cond 0.103 (0.097)
+Epoch: [31][400/400]	Loss_cond 0.085 (0.096)
+Epoch: [32][100/400]	Loss_cond 0.091 (0.095)
+saved images in  transfer_model/vis/cuhk_sysu/32/
+Epoch: [32][200/400]	Loss_cond 0.079 (0.094)
+Epoch: [32][300/400]	Loss_cond 0.086 (0.094)
+Epoch: [32][400/400]	Loss_cond 0.101 (0.094)
+Epoch: [33][100/400]	Loss_cond 0.085 (0.092)
+saved images in  transfer_model/vis/cuhk_sysu/33/
+Epoch: [33][200/400]	Loss_cond 0.089 (0.093)
+Epoch: [33][300/400]	Loss_cond 0.120 (0.093)
+Epoch: [33][400/400]	Loss_cond 0.080 (0.093)
+Epoch: [34][100/400]	Loss_cond 0.084 (0.091)
+saved images in  transfer_model/vis/cuhk_sysu/34/
+Epoch: [34][200/400]	Loss_cond 0.109 (0.092)
+Epoch: [34][300/400]	Loss_cond 0.096 (0.092)
+Epoch: [34][400/400]	Loss_cond 0.083 (0.092)
+Epoch: [35][100/400]	Loss_cond 0.101 (0.093)
+saved images in  transfer_model/vis/cuhk_sysu/35/
+Epoch: [35][200/400]	Loss_cond 0.081 (0.092)
+Epoch: [35][300/400]	Loss_cond 0.072 (0.092)
+Epoch: [35][400/400]	Loss_cond 0.073 (0.092)
+Epoch: [36][100/400]	Loss_cond 0.091 (0.090)
+saved images in  transfer_model/vis/cuhk_sysu/36/
+Epoch: [36][200/400]	Loss_cond 0.087 (0.091)
+Epoch: [36][300/400]	Loss_cond 0.086 (0.091)
+Epoch: [36][400/400]	Loss_cond 0.082 (0.090)
+Epoch: [37][100/400]	Loss_cond 0.105 (0.088)
+saved images in  transfer_model/vis/cuhk_sysu/37/
+Epoch: [37][200/400]	Loss_cond 0.090 (0.089)
+Epoch: [37][300/400]	Loss_cond 0.113 (0.090)
+Epoch: [37][400/400]	Loss_cond 0.080 (0.090)
+Epoch: [38][100/400]	Loss_cond 0.109 (0.090)
+saved images in  transfer_model/vis/cuhk_sysu/38/
+Epoch: [38][200/400]	Loss_cond 0.097 (0.090)
+Epoch: [38][300/400]	Loss_cond 0.082 (0.090)
+Epoch: [38][400/400]	Loss_cond 0.102 (0.089)
+Epoch: [39][100/400]	Loss_cond 0.087 (0.089)
+saved images in  transfer_model/vis/cuhk_sysu/39/
+Epoch: [39][200/400]	Loss_cond 0.099 (0.089)
+Epoch: [39][300/400]	Loss_cond 0.101 (0.089)
+Epoch: [39][400/400]	Loss_cond 0.092 (0.088)
+Epoch: [40][100/400]	Loss_cond 0.090 (0.085)
+saved images in  transfer_model/vis/cuhk_sysu/40/
+Epoch: [40][200/400]	Loss_cond 0.097 (0.085)
+Epoch: [40][300/400]	Loss_cond 0.091 (0.086)
+Epoch: [40][400/400]	Loss_cond 0.102 (0.086)
+Epoch: [41][100/400]	Loss_cond 0.087 (0.087)
+saved images in  transfer_model/vis/cuhk_sysu/41/
+Epoch: [41][200/400]	Loss_cond 0.119 (0.088)
+Epoch: [41][300/400]	Loss_cond 0.077 (0.087)
+Epoch: [41][400/400]	Loss_cond 0.086 (0.087)
+Epoch: [42][100/400]	Loss_cond 0.082 (0.087)
+saved images in  transfer_model/vis/cuhk_sysu/42/
+Epoch: [42][200/400]	Loss_cond 0.077 (0.086)
+Epoch: [42][300/400]	Loss_cond 0.089 (0.087)
+Epoch: [42][400/400]	Loss_cond 0.101 (0.087)
+Epoch: [43][100/400]	Loss_cond 0.080 (0.087)
+saved images in  transfer_model/vis/cuhk_sysu/43/
+Epoch: [43][200/400]	Loss_cond 0.088 (0.085)
+Epoch: [43][300/400]	Loss_cond 0.090 (0.085)
+Epoch: [43][400/400]	Loss_cond 0.069 (0.085)
+Epoch: [44][100/400]	Loss_cond 0.075 (0.084)
+saved images in  transfer_model/vis/cuhk_sysu/44/
+Epoch: [44][200/400]	Loss_cond 0.091 (0.085)
+Epoch: [44][300/400]	Loss_cond 0.087 (0.085)
+Epoch: [44][400/400]	Loss_cond 0.074 (0.086)
+Epoch: [45][100/400]	Loss_cond 0.071 (0.091)
+saved images in  transfer_model/vis/cuhk_sysu/45/
+Epoch: [45][200/400]	Loss_cond 0.111 (0.086)
+Epoch: [45][300/400]	Loss_cond 0.067 (0.086)
+Epoch: [45][400/400]	Loss_cond 0.085 (0.085)
+Epoch: [46][100/400]	Loss_cond 0.075 (0.083)
+saved images in  transfer_model/vis/cuhk_sysu/46/
+Epoch: [46][200/400]	Loss_cond 0.098 (0.084)
+Epoch: [46][300/400]	Loss_cond 0.087 (0.084)
+Epoch: [46][400/400]	Loss_cond 0.076 (0.084)
+Epoch: [47][100/400]	Loss_cond 0.091 (0.084)
+saved images in  transfer_model/vis/cuhk_sysu/47/
+Epoch: [47][200/400]	Loss_cond 0.081 (0.084)
+Epoch: [47][300/400]	Loss_cond 0.084 (0.085)
+Epoch: [47][400/400]	Loss_cond 0.068 (0.084)
+Epoch: [48][100/400]	Loss_cond 0.070 (0.084)
+saved images in  transfer_model/vis/cuhk_sysu/48/
+Epoch: [48][200/400]	Loss_cond 0.101 (0.082)
+Epoch: [48][300/400]	Loss_cond 0.087 (0.083)
+Epoch: [48][400/400]	Loss_cond 0.076 (0.082)
+Epoch: [49][100/400]	Loss_cond 0.073 (0.081)
+saved images in  transfer_model/vis/cuhk_sysu/49/
+Epoch: [49][200/400]	Loss_cond 0.067 (0.082)
+Epoch: [49][300/400]	Loss_cond 0.118 (0.083)
+Epoch: [49][400/400]	Loss_cond 0.083 (0.083)
+creating model!!
+using mobilenet-v3!!!!
+Param count for AKPNet's initialized parameters: 1105348
+generating trainer!!
+start training on  msmt17
+Epoch: [0][100/400]	Loss_cond 0.406 (0.730)
+saved images in  transfer_model/vis/msmt17/0/
+Epoch: [0][200/400]	Loss_cond 0.355 (0.562)
+Epoch: [0][300/400]	Loss_cond 0.296 (0.480)
+Epoch: [0][400/400]	Loss_cond 0.269 (0.431)
+Epoch: [1][100/400]	Loss_cond 0.252 (0.261)
+saved images in  transfer_model/vis/msmt17/1/
+Epoch: [1][200/400]	Loss_cond 0.232 (0.254)
+Epoch: [1][300/400]	Loss_cond 0.230 (0.248)
+Epoch: [1][400/400]	Loss_cond 0.215 (0.242)
+Epoch: [2][100/400]	Loss_cond 0.216 (0.214)
+saved images in  transfer_model/vis/msmt17/2/
+Epoch: [2][200/400]	Loss_cond 0.191 (0.211)
+Epoch: [2][300/400]	Loss_cond 0.204 (0.210)
+Epoch: [2][400/400]	Loss_cond 0.171 (0.209)
+Epoch: [3][100/400]	Loss_cond 0.185 (0.195)
+saved images in  transfer_model/vis/msmt17/3/
+Epoch: [3][200/400]	Loss_cond 0.186 (0.192)
+Epoch: [3][300/400]	Loss_cond 0.185 (0.190)
+Epoch: [3][400/400]	Loss_cond 0.188 (0.188)
+Epoch: [4][100/400]	Loss_cond 0.184 (0.180)
+saved images in  transfer_model/vis/msmt17/4/
+Epoch: [4][200/400]	Loss_cond 0.149 (0.177)
+Epoch: [4][300/400]	Loss_cond 0.173 (0.176)
+Epoch: [4][400/400]	Loss_cond 0.169 (0.176)
+Epoch: [5][100/400]	Loss_cond 0.178 (0.166)
+saved images in  transfer_model/vis/msmt17/5/
+Epoch: [5][200/400]	Loss_cond 0.171 (0.167)
+Epoch: [5][300/400]	Loss_cond 0.143 (0.167)
+Epoch: [5][400/400]	Loss_cond 0.184 (0.166)
+Epoch: [6][100/400]	Loss_cond 0.131 (0.162)
+saved images in  transfer_model/vis/msmt17/6/
+Epoch: [6][200/400]	Loss_cond 0.152 (0.161)
+Epoch: [6][300/400]	Loss_cond 0.157 (0.160)
+Epoch: [6][400/400]	Loss_cond 0.217 (0.160)
+Epoch: [7][100/400]	Loss_cond 0.153 (0.153)
+saved images in  transfer_model/vis/msmt17/7/
+Epoch: [7][200/400]	Loss_cond 0.162 (0.153)
+Epoch: [7][300/400]	Loss_cond 0.147 (0.152)
+Epoch: [7][400/400]	Loss_cond 0.138 (0.151)
+Epoch: [8][100/400]	Loss_cond 0.142 (0.150)
+saved images in  transfer_model/vis/msmt17/8/
+Epoch: [8][200/400]	Loss_cond 0.120 (0.150)
+Epoch: [8][300/400]	Loss_cond 0.140 (0.149)
+Epoch: [8][400/400]	Loss_cond 0.152 (0.148)
+Epoch: [9][100/400]	Loss_cond 0.141 (0.141)
+saved images in  transfer_model/vis/msmt17/9/
+Epoch: [9][200/400]	Loss_cond 0.165 (0.145)
+Epoch: [9][300/400]	Loss_cond 0.146 (0.145)
+Epoch: [9][400/400]	Loss_cond 0.143 (0.144)
+Epoch: [10][100/400]	Loss_cond 0.145 (0.143)
+saved images in  transfer_model/vis/msmt17/10/
+Epoch: [10][200/400]	Loss_cond 0.140 (0.142)
+Epoch: [10][300/400]	Loss_cond 0.158 (0.141)
+Epoch: [10][400/400]	Loss_cond 0.161 (0.140)
+Epoch: [11][100/400]	Loss_cond 0.177 (0.137)
+saved images in  transfer_model/vis/msmt17/11/
+Epoch: [11][200/400]	Loss_cond 0.120 (0.137)
+Epoch: [11][300/400]	Loss_cond 0.133 (0.137)
+Epoch: [11][400/400]	Loss_cond 0.132 (0.137)
+Epoch: [12][100/400]	Loss_cond 0.132 (0.134)
+saved images in  transfer_model/vis/msmt17/12/
+Epoch: [12][200/400]	Loss_cond 0.146 (0.134)
+Epoch: [12][300/400]	Loss_cond 0.128 (0.133)
+Epoch: [12][400/400]	Loss_cond 0.152 (0.133)
+Epoch: [13][100/400]	Loss_cond 0.122 (0.130)
+saved images in  transfer_model/vis/msmt17/13/
+Epoch: [13][200/400]	Loss_cond 0.124 (0.130)
+Epoch: [13][300/400]	Loss_cond 0.116 (0.130)
+Epoch: [13][400/400]	Loss_cond 0.121 (0.131)
+Epoch: [14][100/400]	Loss_cond 0.143 (0.130)
+saved images in  transfer_model/vis/msmt17/14/
+Epoch: [14][200/400]	Loss_cond 0.117 (0.129)
+Epoch: [14][300/400]	Loss_cond 0.149 (0.128)
+Epoch: [14][400/400]	Loss_cond 0.129 (0.129)
+Epoch: [15][100/400]	Loss_cond 0.104 (0.124)
+saved images in  transfer_model/vis/msmt17/15/
+Epoch: [15][200/400]	Loss_cond 0.111 (0.125)
+Epoch: [15][300/400]	Loss_cond 0.128 (0.125)
+Epoch: [15][400/400]	Loss_cond 0.125 (0.126)
+Epoch: [16][100/400]	Loss_cond 0.108 (0.127)
+saved images in  transfer_model/vis/msmt17/16/
+Epoch: [16][200/400]	Loss_cond 0.111 (0.126)
+Epoch: [16][300/400]	Loss_cond 0.103 (0.125)
+Epoch: [16][400/400]	Loss_cond 0.120 (0.124)
+Epoch: [17][100/400]	Loss_cond 0.101 (0.123)
+saved images in  transfer_model/vis/msmt17/17/
+Epoch: [17][200/400]	Loss_cond 0.148 (0.124)
+Epoch: [17][300/400]	Loss_cond 0.115 (0.124)
+Epoch: [17][400/400]	Loss_cond 0.113 (0.123)
+Epoch: [18][100/400]	Loss_cond 0.112 (0.123)
+saved images in  transfer_model/vis/msmt17/18/
+Epoch: [18][200/400]	Loss_cond 0.116 (0.121)
+Epoch: [18][300/400]	Loss_cond 0.131 (0.121)
+Epoch: [18][400/400]	Loss_cond 0.134 (0.120)
+Epoch: [19][100/400]	Loss_cond 0.110 (0.121)
+saved images in  transfer_model/vis/msmt17/19/
+Epoch: [19][200/400]	Loss_cond 0.151 (0.122)
+Epoch: [19][300/400]	Loss_cond 0.128 (0.119)
+Epoch: [19][400/400]	Loss_cond 0.127 (0.119)
+Epoch: [20][100/400]	Loss_cond 0.123 (0.113)
+saved images in  transfer_model/vis/msmt17/20/
+Epoch: [20][200/400]	Loss_cond 0.145 (0.115)
+Epoch: [20][300/400]	Loss_cond 0.141 (0.116)
+Epoch: [20][400/400]	Loss_cond 0.110 (0.116)
+Epoch: [21][100/400]	Loss_cond 0.124 (0.120)
+saved images in  transfer_model/vis/msmt17/21/
+Epoch: [21][200/400]	Loss_cond 0.094 (0.116)
+Epoch: [21][300/400]	Loss_cond 0.100 (0.117)
+Epoch: [21][400/400]	Loss_cond 0.101 (0.116)
+Epoch: [22][100/400]	Loss_cond 0.122 (0.114)
+saved images in  transfer_model/vis/msmt17/22/
+Epoch: [22][200/400]	Loss_cond 0.124 (0.113)
+Epoch: [22][300/400]	Loss_cond 0.122 (0.114)
+Epoch: [22][400/400]	Loss_cond 0.136 (0.114)
+Epoch: [23][100/400]	Loss_cond 0.109 (0.114)
+saved images in  transfer_model/vis/msmt17/23/
+Epoch: [23][200/400]	Loss_cond 0.091 (0.113)
+Epoch: [23][300/400]	Loss_cond 0.116 (0.114)
+Epoch: [23][400/400]	Loss_cond 0.148 (0.113)
+Epoch: [24][100/400]	Loss_cond 0.107 (0.111)
+saved images in  transfer_model/vis/msmt17/24/
+Epoch: [24][200/400]	Loss_cond 0.120 (0.112)
+Epoch: [24][300/400]	Loss_cond 0.104 (0.112)
+Epoch: [24][400/400]	Loss_cond 0.136 (0.112)
+Epoch: [25][100/400]	Loss_cond 0.113 (0.112)
+saved images in  transfer_model/vis/msmt17/25/
+Epoch: [25][200/400]	Loss_cond 0.129 (0.111)
+Epoch: [25][300/400]	Loss_cond 0.105 (0.110)
+Epoch: [25][400/400]	Loss_cond 0.099 (0.110)
+Epoch: [26][100/400]	Loss_cond 0.100 (0.108)
+saved images in  transfer_model/vis/msmt17/26/
+Epoch: [26][200/400]	Loss_cond 0.120 (0.109)
+Epoch: [26][300/400]	Loss_cond 0.126 (0.109)
+Epoch: [26][400/400]	Loss_cond 0.086 (0.110)
+Epoch: [27][100/400]	Loss_cond 0.104 (0.105)
+saved images in  transfer_model/vis/msmt17/27/
+Epoch: [27][200/400]	Loss_cond 0.115 (0.107)
+Epoch: [27][300/400]	Loss_cond 0.118 (0.108)
+Epoch: [27][400/400]	Loss_cond 0.102 (0.107)
+Epoch: [28][100/400]	Loss_cond 0.115 (0.110)
+saved images in  transfer_model/vis/msmt17/28/
+Epoch: [28][200/400]	Loss_cond 0.096 (0.108)
+Epoch: [28][300/400]	Loss_cond 0.120 (0.108)
+Epoch: [28][400/400]	Loss_cond 0.093 (0.108)
+Epoch: [29][100/400]	Loss_cond 0.104 (0.107)
+saved images in  transfer_model/vis/msmt17/29/
+Epoch: [29][200/400]	Loss_cond 0.131 (0.107)
+Epoch: [29][300/400]	Loss_cond 0.090 (0.107)
+Epoch: [29][400/400]	Loss_cond 0.121 (0.106)
+Epoch: [30][100/400]	Loss_cond 0.085 (0.106)
+saved images in  transfer_model/vis/msmt17/30/
+Epoch: [30][200/400]	Loss_cond 0.107 (0.106)
+Epoch: [30][300/400]	Loss_cond 0.111 (0.106)
+Epoch: [30][400/400]	Loss_cond 0.112 (0.106)
+Epoch: [31][100/400]	Loss_cond 0.108 (0.105)
+saved images in  transfer_model/vis/msmt17/31/
+Epoch: [31][200/400]	Loss_cond 0.093 (0.106)
+Epoch: [31][300/400]	Loss_cond 0.125 (0.105)
+Epoch: [31][400/400]	Loss_cond 0.099 (0.105)
+Epoch: [32][100/400]	Loss_cond 0.095 (0.105)
+saved images in  transfer_model/vis/msmt17/32/
+Epoch: [32][200/400]	Loss_cond 0.098 (0.104)
+Epoch: [32][300/400]	Loss_cond 0.086 (0.103)
+Epoch: [32][400/400]	Loss_cond 0.093 (0.103)
+Epoch: [33][100/400]	Loss_cond 0.141 (0.102)
+saved images in  transfer_model/vis/msmt17/33/
+Epoch: [33][200/400]	Loss_cond 0.101 (0.102)
+Epoch: [33][300/400]	Loss_cond 0.103 (0.102)
+Epoch: [33][400/400]	Loss_cond 0.103 (0.102)
+Epoch: [34][100/400]	Loss_cond 0.099 (0.103)
+saved images in  transfer_model/vis/msmt17/34/
+Epoch: [34][200/400]	Loss_cond 0.090 (0.103)
+Epoch: [34][300/400]	Loss_cond 0.101 (0.101)
+Epoch: [34][400/400]	Loss_cond 0.087 (0.101)
+Epoch: [35][100/400]	Loss_cond 0.112 (0.103)
+saved images in  transfer_model/vis/msmt17/35/
+Epoch: [35][200/400]	Loss_cond 0.134 (0.103)
+Epoch: [35][300/400]	Loss_cond 0.094 (0.103)
+Epoch: [35][400/400]	Loss_cond 0.090 (0.102)
+Epoch: [36][100/400]	Loss_cond 0.119 (0.099)
+saved images in  transfer_model/vis/msmt17/36/
+Epoch: [36][200/400]	Loss_cond 0.085 (0.100)
+Epoch: [36][300/400]	Loss_cond 0.115 (0.100)
+Epoch: [36][400/400]	Loss_cond 0.095 (0.100)
+Epoch: [37][100/400]	Loss_cond 0.082 (0.100)
+saved images in  transfer_model/vis/msmt17/37/
+Epoch: [37][200/400]	Loss_cond 0.091 (0.100)
+Epoch: [37][300/400]	Loss_cond 0.088 (0.100)
+Epoch: [37][400/400]	Loss_cond 0.101 (0.099)
+Epoch: [38][100/400]	Loss_cond 0.097 (0.100)
+saved images in  transfer_model/vis/msmt17/38/
+Epoch: [38][200/400]	Loss_cond 0.084 (0.099)
+Epoch: [38][300/400]	Loss_cond 0.094 (0.099)
+Epoch: [38][400/400]	Loss_cond 0.108 (0.098)
+Epoch: [39][100/400]	Loss_cond 0.097 (0.097)
+saved images in  transfer_model/vis/msmt17/39/
+Epoch: [39][200/400]	Loss_cond 0.103 (0.098)
+Epoch: [39][300/400]	Loss_cond 0.098 (0.099)
+Epoch: [39][400/400]	Loss_cond 0.108 (0.098)
+Epoch: [40][100/400]	Loss_cond 0.090 (0.099)
+saved images in  transfer_model/vis/msmt17/40/
+Epoch: [40][200/400]	Loss_cond 0.092 (0.098)
+Epoch: [40][300/400]	Loss_cond 0.083 (0.097)
+Epoch: [40][400/400]	Loss_cond 0.101 (0.097)
+Epoch: [41][100/400]	Loss_cond 0.096 (0.101)
+saved images in  transfer_model/vis/msmt17/41/
+Epoch: [41][200/400]	Loss_cond 0.096 (0.099)
+Epoch: [41][300/400]	Loss_cond 0.095 (0.098)
+Epoch: [41][400/400]	Loss_cond 0.095 (0.097)
+Epoch: [42][100/400]	Loss_cond 0.100 (0.096)
+saved images in  transfer_model/vis/msmt17/42/
+Epoch: [42][200/400]	Loss_cond 0.092 (0.096)
+Epoch: [42][300/400]	Loss_cond 0.101 (0.095)
+Epoch: [42][400/400]	Loss_cond 0.080 (0.096)
+Epoch: [43][100/400]	Loss_cond 0.101 (0.098)
+saved images in  transfer_model/vis/msmt17/43/
+Epoch: [43][200/400]	Loss_cond 0.095 (0.098)
+Epoch: [43][300/400]	Loss_cond 0.088 (0.097)
+Epoch: [43][400/400]	Loss_cond 0.087 (0.097)
+Epoch: [44][100/400]	Loss_cond 0.088 (0.096)
+saved images in  transfer_model/vis/msmt17/44/
+Epoch: [44][200/400]	Loss_cond 0.086 (0.096)
+Epoch: [44][300/400]	Loss_cond 0.077 (0.095)
+Epoch: [44][400/400]	Loss_cond 0.092 (0.095)
+Epoch: [45][100/400]	Loss_cond 0.091 (0.095)
+saved images in  transfer_model/vis/msmt17/45/
+Epoch: [45][200/400]	Loss_cond 0.099 (0.094)
+Epoch: [45][300/400]	Loss_cond 0.105 (0.094)
+Epoch: [45][400/400]	Loss_cond 0.080 (0.094)
+Epoch: [46][100/400]	Loss_cond 0.089 (0.093)
+saved images in  transfer_model/vis/msmt17/46/
+Epoch: [46][200/400]	Loss_cond 0.079 (0.094)
+Epoch: [46][300/400]	Loss_cond 0.098 (0.094)
+Epoch: [46][400/400]	Loss_cond 0.094 (0.093)
+Epoch: [47][100/400]	Loss_cond 0.087 (0.095)
+saved images in  transfer_model/vis/msmt17/47/
+Epoch: [47][200/400]	Loss_cond 0.085 (0.094)
+Epoch: [47][300/400]	Loss_cond 0.092 (0.093)
+Epoch: [47][400/400]	Loss_cond 0.086 (0.093)
+Epoch: [48][100/400]	Loss_cond 0.085 (0.096)
+saved images in  transfer_model/vis/msmt17/48/
+Epoch: [48][200/400]	Loss_cond 0.111 (0.095)
+Epoch: [48][300/400]	Loss_cond 0.085 (0.095)
+Epoch: [48][400/400]	Loss_cond 0.080 (0.094)
+Epoch: [49][100/400]	Loss_cond 0.103 (0.094)
+saved images in  transfer_model/vis/msmt17/49/
+Epoch: [49][200/400]	Loss_cond 0.083 (0.094)
+Epoch: [49][300/400]	Loss_cond 0.092 (0.093)
+Epoch: [49][400/400]	Loss_cond 0.114 (0.093)
+creating model!!
+using mobilenet-v3!!!!
+Param count for AKPNet's initialized parameters: 1105348
+generating trainer!!
+start training on  cuhk03
+Epoch: [0][100/400]	Loss_cond 0.373 (0.714)
+saved images in  transfer_model/vis/cuhk03/0/
+Epoch: [0][200/400]	Loss_cond 0.252 (0.512)
+Epoch: [0][300/400]	Loss_cond 0.221 (0.421)
+Epoch: [0][400/400]	Loss_cond 0.202 (0.367)
+Epoch: [1][100/400]	Loss_cond 0.166 (0.183)
+saved images in  transfer_model/vis/cuhk03/1/
+Epoch: [1][200/400]	Loss_cond 0.157 (0.175)
+Epoch: [1][300/400]	Loss_cond 0.162 (0.171)
+Epoch: [1][400/400]	Loss_cond 0.155 (0.165)
+Epoch: [2][100/400]	Loss_cond 0.137 (0.142)
+saved images in  transfer_model/vis/cuhk03/2/
+Epoch: [2][200/400]	Loss_cond 0.172 (0.143)
+Epoch: [2][300/400]	Loss_cond 0.122 (0.141)
+Epoch: [2][400/400]	Loss_cond 0.130 (0.139)
+Epoch: [3][100/400]	Loss_cond 0.108 (0.125)
+saved images in  transfer_model/vis/cuhk03/3/
+Epoch: [3][200/400]	Loss_cond 0.127 (0.125)
+Epoch: [3][300/400]	Loss_cond 0.123 (0.126)
+Epoch: [3][400/400]	Loss_cond 0.135 (0.124)
+Epoch: [4][100/400]	Loss_cond 0.148 (0.123)
+saved images in  transfer_model/vis/cuhk03/4/
+Epoch: [4][200/400]	Loss_cond 0.096 (0.122)
+Epoch: [4][300/400]	Loss_cond 0.132 (0.120)
+Epoch: [4][400/400]	Loss_cond 0.117 (0.118)
+Epoch: [5][100/400]	Loss_cond 0.091 (0.112)
+saved images in  transfer_model/vis/cuhk03/5/
+Epoch: [5][200/400]	Loss_cond 0.096 (0.110)
+Epoch: [5][300/400]	Loss_cond 0.127 (0.110)
+Epoch: [5][400/400]	Loss_cond 0.092 (0.109)
+Epoch: [6][100/400]	Loss_cond 0.121 (0.106)
+saved images in  transfer_model/vis/cuhk03/6/
+Epoch: [6][200/400]	Loss_cond 0.111 (0.107)
+Epoch: [6][300/400]	Loss_cond 0.092 (0.106)
+Epoch: [6][400/400]	Loss_cond 0.097 (0.105)
+Epoch: [7][100/400]	Loss_cond 0.121 (0.103)
+saved images in  transfer_model/vis/cuhk03/7/
+Epoch: [7][200/400]	Loss_cond 0.088 (0.101)
+Epoch: [7][300/400]	Loss_cond 0.122 (0.101)
+Epoch: [7][400/400]	Loss_cond 0.090 (0.100)
+Epoch: [8][100/400]	Loss_cond 0.096 (0.099)
+saved images in  transfer_model/vis/cuhk03/8/
+Epoch: [8][200/400]	Loss_cond 0.083 (0.097)
+Epoch: [8][300/400]	Loss_cond 0.099 (0.097)
+Epoch: [8][400/400]	Loss_cond 0.114 (0.097)
+Epoch: [9][100/400]	Loss_cond 0.087 (0.094)
+saved images in  transfer_model/vis/cuhk03/9/
+Epoch: [9][200/400]	Loss_cond 0.076 (0.094)
+Epoch: [9][300/400]	Loss_cond 0.083 (0.094)
+Epoch: [9][400/400]	Loss_cond 0.111 (0.094)
+Epoch: [10][100/400]	Loss_cond 0.087 (0.092)
+saved images in  transfer_model/vis/cuhk03/10/
+Epoch: [10][200/400]	Loss_cond 0.078 (0.091)
+Epoch: [10][300/400]	Loss_cond 0.084 (0.091)
+Epoch: [10][400/400]	Loss_cond 0.089 (0.091)
+Epoch: [11][100/400]	Loss_cond 0.085 (0.091)
+saved images in  transfer_model/vis/cuhk03/11/
+Epoch: [11][200/400]	Loss_cond 0.083 (0.090)
+Epoch: [11][300/400]	Loss_cond 0.088 (0.090)
+Epoch: [11][400/400]	Loss_cond 0.085 (0.089)
+Epoch: [12][100/400]	Loss_cond 0.106 (0.085)
+saved images in  transfer_model/vis/cuhk03/12/
+Epoch: [12][200/400]	Loss_cond 0.085 (0.086)
+Epoch: [12][300/400]	Loss_cond 0.090 (0.087)
+Epoch: [12][400/400]	Loss_cond 0.076 (0.086)
+Epoch: [13][100/400]	Loss_cond 0.094 (0.087)
+saved images in  transfer_model/vis/cuhk03/13/
+Epoch: [13][200/400]	Loss_cond 0.081 (0.087)
+Epoch: [13][300/400]	Loss_cond 0.101 (0.086)
+Epoch: [13][400/400]	Loss_cond 0.068 (0.086)
+Epoch: [14][100/400]	Loss_cond 0.091 (0.086)
+saved images in  transfer_model/vis/cuhk03/14/
+Epoch: [14][200/400]	Loss_cond 0.078 (0.084)
+Epoch: [14][300/400]	Loss_cond 0.073 (0.084)
+Epoch: [14][400/400]	Loss_cond 0.075 (0.084)
+Epoch: [15][100/400]	Loss_cond 0.080 (0.083)
+saved images in  transfer_model/vis/cuhk03/15/
+Epoch: [15][200/400]	Loss_cond 0.074 (0.082)
+Epoch: [15][300/400]	Loss_cond 0.082 (0.082)
+Epoch: [15][400/400]	Loss_cond 0.079 (0.082)
+Epoch: [16][100/400]	Loss_cond 0.083 (0.081)
+saved images in  transfer_model/vis/cuhk03/16/
+Epoch: [16][200/400]	Loss_cond 0.076 (0.079)
+Epoch: [16][300/400]	Loss_cond 0.097 (0.078)
+Epoch: [16][400/400]	Loss_cond 0.084 (0.079)
+Epoch: [17][100/400]	Loss_cond 0.074 (0.079)
+saved images in  transfer_model/vis/cuhk03/17/
+Epoch: [17][200/400]	Loss_cond 0.078 (0.078)
+Epoch: [17][300/400]	Loss_cond 0.089 (0.079)
+Epoch: [17][400/400]	Loss_cond 0.083 (0.078)
+Epoch: [18][100/400]	Loss_cond 0.089 (0.080)
+saved images in  transfer_model/vis/cuhk03/18/
+Epoch: [18][200/400]	Loss_cond 0.066 (0.078)
+Epoch: [18][300/400]	Loss_cond 0.078 (0.078)
+Epoch: [18][400/400]	Loss_cond 0.069 (0.078)
+Epoch: [19][100/400]	Loss_cond 0.080 (0.079)
+saved images in  transfer_model/vis/cuhk03/19/
+Epoch: [19][200/400]	Loss_cond 0.087 (0.078)
+Epoch: [19][300/400]	Loss_cond 0.082 (0.077)
+Epoch: [19][400/400]	Loss_cond 0.062 (0.077)
+Epoch: [20][100/400]	Loss_cond 0.080 (0.076)
+saved images in  transfer_model/vis/cuhk03/20/
+Epoch: [20][200/400]	Loss_cond 0.079 (0.075)
+Epoch: [20][300/400]	Loss_cond 0.065 (0.075)
+Epoch: [20][400/400]	Loss_cond 0.063 (0.074)
+Epoch: [21][100/400]	Loss_cond 0.062 (0.075)
+saved images in  transfer_model/vis/cuhk03/21/
+Epoch: [21][200/400]	Loss_cond 0.067 (0.075)
+Epoch: [21][300/400]	Loss_cond 0.079 (0.075)
+Epoch: [21][400/400]	Loss_cond 0.056 (0.074)
+Epoch: [22][100/400]	Loss_cond 0.076 (0.072)
+saved images in  transfer_model/vis/cuhk03/22/
+Epoch: [22][200/400]	Loss_cond 0.081 (0.072)
+Epoch: [22][300/400]	Loss_cond 0.074 (0.073)
+Epoch: [22][400/400]	Loss_cond 0.070 (0.072)
+Epoch: [23][100/400]	Loss_cond 0.069 (0.073)
+saved images in  transfer_model/vis/cuhk03/23/
+Epoch: [23][200/400]	Loss_cond 0.058 (0.072)
+Epoch: [23][300/400]	Loss_cond 0.090 (0.072)
+Epoch: [23][400/400]	Loss_cond 0.074 (0.072)
+Epoch: [24][100/400]	Loss_cond 0.075 (0.071)
+saved images in  transfer_model/vis/cuhk03/24/
+Epoch: [24][200/400]	Loss_cond 0.066 (0.072)
+Epoch: [24][300/400]	Loss_cond 0.065 (0.073)
+Epoch: [24][400/400]	Loss_cond 0.069 (0.073)
+Epoch: [25][100/400]	Loss_cond 0.064 (0.070)
+saved images in  transfer_model/vis/cuhk03/25/
+Epoch: [25][200/400]	Loss_cond 0.062 (0.071)
+Epoch: [25][300/400]	Loss_cond 0.068 (0.071)
+Epoch: [25][400/400]	Loss_cond 0.078 (0.071)
+Epoch: [26][100/400]	Loss_cond 0.084 (0.070)
+saved images in  transfer_model/vis/cuhk03/26/
+Epoch: [26][200/400]	Loss_cond 0.068 (0.069)
+Epoch: [26][300/400]	Loss_cond 0.071 (0.069)
+Epoch: [26][400/400]	Loss_cond 0.065 (0.069)
+Epoch: [27][100/400]	Loss_cond 0.053 (0.069)
+saved images in  transfer_model/vis/cuhk03/27/
+Epoch: [27][200/400]	Loss_cond 0.062 (0.070)
+Epoch: [27][300/400]	Loss_cond 0.063 (0.068)
+Epoch: [27][400/400]	Loss_cond 0.069 (0.069)
+Epoch: [28][100/400]	Loss_cond 0.064 (0.069)
+saved images in  transfer_model/vis/cuhk03/28/
+Epoch: [28][200/400]	Loss_cond 0.077 (0.068)
+Epoch: [28][300/400]	Loss_cond 0.072 (0.068)
+Epoch: [28][400/400]	Loss_cond 0.066 (0.068)
+Epoch: [29][100/400]	Loss_cond 0.055 (0.066)
+saved images in  transfer_model/vis/cuhk03/29/
+Epoch: [29][200/400]	Loss_cond 0.064 (0.066)
+Epoch: [29][300/400]	Loss_cond 0.078 (0.068)
+Epoch: [29][400/400]	Loss_cond 0.052 (0.068)
+Epoch: [30][100/400]	Loss_cond 0.066 (0.069)
+saved images in  transfer_model/vis/cuhk03/30/
+Epoch: [30][200/400]	Loss_cond 0.061 (0.069)
+Epoch: [30][300/400]	Loss_cond 0.071 (0.068)
+Epoch: [30][400/400]	Loss_cond 0.068 (0.067)
+Epoch: [31][100/400]	Loss_cond 0.059 (0.065)
+saved images in  transfer_model/vis/cuhk03/31/
+Epoch: [31][200/400]	Loss_cond 0.071 (0.067)
+Epoch: [31][300/400]	Loss_cond 0.068 (0.066)
+Epoch: [31][400/400]	Loss_cond 0.056 (0.067)
+Epoch: [32][100/400]	Loss_cond 0.072 (0.067)
+saved images in  transfer_model/vis/cuhk03/32/
+Epoch: [32][200/400]	Loss_cond 0.077 (0.065)
+Epoch: [32][300/400]	Loss_cond 0.077 (0.066)
+Epoch: [32][400/400]	Loss_cond 0.065 (0.066)
+Epoch: [33][100/400]	Loss_cond 0.074 (0.065)
+saved images in  transfer_model/vis/cuhk03/33/
+Epoch: [33][200/400]	Loss_cond 0.055 (0.064)
+Epoch: [33][300/400]	Loss_cond 0.055 (0.064)
+Epoch: [33][400/400]	Loss_cond 0.068 (0.063)
+Epoch: [34][100/400]	Loss_cond 0.050 (0.066)
+saved images in  transfer_model/vis/cuhk03/34/
+Epoch: [34][200/400]	Loss_cond 0.061 (0.064)
+Epoch: [34][300/400]	Loss_cond 0.075 (0.063)
+Epoch: [34][400/400]	Loss_cond 0.064 (0.063)
+Epoch: [35][100/400]	Loss_cond 0.070 (0.064)
+saved images in  transfer_model/vis/cuhk03/35/
+Epoch: [35][200/400]	Loss_cond 0.052 (0.064)
+Epoch: [35][300/400]	Loss_cond 0.106 (0.064)
+Epoch: [35][400/400]	Loss_cond 0.085 (0.064)
+Epoch: [36][100/400]	Loss_cond 0.067 (0.063)
+saved images in  transfer_model/vis/cuhk03/36/
+Epoch: [36][200/400]	Loss_cond 0.055 (0.063)
+Epoch: [36][300/400]	Loss_cond 0.063 (0.063)
+Epoch: [36][400/400]	Loss_cond 0.051 (0.063)
+Epoch: [37][100/400]	Loss_cond 0.068 (0.064)
+saved images in  transfer_model/vis/cuhk03/37/
+Epoch: [37][200/400]	Loss_cond 0.066 (0.064)
+Epoch: [37][300/400]	Loss_cond 0.065 (0.063)
+Epoch: [37][400/400]	Loss_cond 0.067 (0.063)
+Epoch: [38][100/400]	Loss_cond 0.062 (0.062)
+saved images in  transfer_model/vis/cuhk03/38/
+Epoch: [38][200/400]	Loss_cond 0.049 (0.062)
+Epoch: [38][300/400]	Loss_cond 0.062 (0.061)
+Epoch: [38][400/400]	Loss_cond 0.052 (0.062)
+Epoch: [39][100/400]	Loss_cond 0.083 (0.063)
+saved images in  transfer_model/vis/cuhk03/39/
+Epoch: [39][200/400]	Loss_cond 0.067 (0.062)
+Epoch: [39][300/400]	Loss_cond 0.058 (0.062)
+Epoch: [39][400/400]	Loss_cond 0.078 (0.062)
+Epoch: [40][100/400]	Loss_cond 0.056 (0.061)
+saved images in  transfer_model/vis/cuhk03/40/
+Epoch: [40][200/400]	Loss_cond 0.052 (0.062)
+Epoch: [40][300/400]	Loss_cond 0.058 (0.062)
+Epoch: [40][400/400]	Loss_cond 0.062 (0.061)
+Epoch: [41][100/400]	Loss_cond 0.065 (0.061)
+saved images in  transfer_model/vis/cuhk03/41/
+Epoch: [41][200/400]	Loss_cond 0.066 (0.061)
+Epoch: [41][300/400]	Loss_cond 0.071 (0.061)
+Epoch: [41][400/400]	Loss_cond 0.044 (0.061)
+Epoch: [42][100/400]	Loss_cond 0.067 (0.060)
+saved images in  transfer_model/vis/cuhk03/42/
+Epoch: [42][200/400]	Loss_cond 0.054 (0.060)
+Epoch: [42][300/400]	Loss_cond 0.057 (0.060)
+Epoch: [42][400/400]	Loss_cond 0.067 (0.060)
+Epoch: [43][100/400]	Loss_cond 0.061 (0.060)
+saved images in  transfer_model/vis/cuhk03/43/
+Epoch: [43][200/400]	Loss_cond 0.055 (0.060)
+Epoch: [43][300/400]	Loss_cond 0.060 (0.059)
+Epoch: [43][400/400]	Loss_cond 0.067 (0.059)
+Epoch: [44][100/400]	Loss_cond 0.054 (0.059)
+saved images in  transfer_model/vis/cuhk03/44/
+Epoch: [44][200/400]	Loss_cond 0.049 (0.059)
+Epoch: [44][300/400]	Loss_cond 0.068 (0.059)
+Epoch: [44][400/400]	Loss_cond 0.055 (0.059)
+Epoch: [45][100/400]	Loss_cond 0.073 (0.060)
+saved images in  transfer_model/vis/cuhk03/45/
+Epoch: [45][200/400]	Loss_cond 0.074 (0.060)
+Epoch: [45][300/400]	Loss_cond 0.073 (0.060)
+Epoch: [45][400/400]	Loss_cond 0.058 (0.059)
+Epoch: [46][100/400]	Loss_cond 0.064 (0.059)
+saved images in  transfer_model/vis/cuhk03/46/
+Epoch: [46][200/400]	Loss_cond 0.064 (0.059)
+Epoch: [46][300/400]	Loss_cond 0.059 (0.059)
+Epoch: [46][400/400]	Loss_cond 0.051 (0.059)
+Epoch: [47][100/400]	Loss_cond 0.058 (0.058)
+saved images in  transfer_model/vis/cuhk03/47/
+Epoch: [47][200/400]	Loss_cond 0.041 (0.059)
+Epoch: [47][300/400]	Loss_cond 0.044 (0.058)
+Epoch: [47][400/400]	Loss_cond 0.053 (0.058)
+Epoch: [48][100/400]	Loss_cond 0.056 (0.056)
+saved images in  transfer_model/vis/cuhk03/48/
+Epoch: [48][200/400]	Loss_cond 0.058 (0.057)
+Epoch: [48][300/400]	Loss_cond 0.058 (0.057)
+Epoch: [48][400/400]	Loss_cond 0.066 (0.058)
+Epoch: [49][100/400]	Loss_cond 0.049 (0.057)
+saved images in  transfer_model/vis/cuhk03/49/
+Epoch: [49][200/400]	Loss_cond 0.052 (0.057)
+Epoch: [49][300/400]	Loss_cond 0.075 (0.057)
+Epoch: [49][400/400]	Loss_cond 0.052 (0.056)
